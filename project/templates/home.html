@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}" />
+</head>
+
+<body>
+    <div class="section-a">
+        <img src="{{ url_for('static', filename='bg.png')}}" alt="bg">
+
+        <!-- <div class="section-a__center">
+
+            <h4>Помни только сегодня:</h4>
+            <h2>{{ random_text }}</h2>
+        </div> -->
+    </div>
+
+
+    <div class="section-b">
+        <div class="section-b__row">
+            {% for d in row1 %}
+            <p>{{ d }}</p>
+            {% endfor %}
+        </div>
+
+        <div class="section-b__row">
+            {% for d in row2 %}
+            <p>{{ d }}</p>
+            {% endfor %}
+        </div>
+
+        <div class="section-b__row">
+            {% for d in row3 %}
+            <p>{{ d }}</p>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>
