@@ -5,7 +5,7 @@ authors = ('Однажды великий мудрец сказал:', 'Не з�
 
 
 def get_data_in_rows() -> tuple[list[str], list[str], list[str]]:
-    with open('project/data.txt', 'r', encoding='utf-8') as f:
+    with open('./data.txt', 'r', encoding='utf-8') as f:
         data = f.read().strip().split('\n')
 
     data1 = []
