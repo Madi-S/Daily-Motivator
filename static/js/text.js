@@ -1,4 +1,4 @@
-export const authors = [
+const authors = [
     'Помни, что',
     'Умные слова',
     'Очень важно',
@@ -11,7 +11,7 @@ export const authors = [
     'Однажды великий мудрец сказал:'
 ]
 
-export const quotes = [
+const quotes = [
     'Три вещи, которые нас всегда спасают: Вера, Любовь, Надежда',
     'Каждый раз спрашивай себя: "Зачем я это делаю?"',
     'Хороший ты или плохой человек зависит от того какой выбор ты сделаешь сейчас',
@@ -51,6 +51,6 @@ export const quotes = [
     'Поутру следует сказать себе: "Сегодня мне придетс встретиться с людьми ...'
 ]
 
-export const getRandom = array => {
+const getRandom = array => {
     return array[Math.floor(Math.random() * array.length)]
 }
