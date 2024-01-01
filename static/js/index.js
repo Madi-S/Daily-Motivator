@@ -7,13 +7,13 @@ const divSections = document.querySelectorAll('section-b__row')
 
 // Set random main quote and author
 quoteHeading.textContent = getRandom(quotes)
-authorHeading.textContent = getRandom(authors)
+authorHeading.textContent = getRandom(authors) + ':'
 
 // Arrange quotes in three rows
 for (let i = 0; i < quotes.length; i + 3) {
-    divSections[0].insertAdjacentHTML('beforeend', quotes[i])
+    divSections[0].insertAdjacentHTML('beforeend', `<p>${quotes[i]}</p>`)
     if (i + 1 < quotes.length)
-        divSections[1].insertAdjacentHTML('afterend', quotes[i + 1])
+        divSections[1].insertAdjacentHTML('afterend', `<p>${quotes[i + 1]}</p>`)
     if (i + 2 < quotes.length)
-        divSections[2].insertAdjacentHTML('afterend', quotes[i + 2])
+        divSections[2].insertAdjacentHTML('afterend', `<p>${quotes[i + 2]}</p>`)
 }
